@@ -73,7 +73,7 @@ with dpg.window(tag="window",no_resize=True):
                 dpg.add_text("Paragon launcher \n V1.0.1-A", pos = [280,150])
                 dpg.add_text("", pos = [280,179],tag="messange")
 
-dpg.add_file_dialog(tag="entergamepath",directory_selector=True,show=False,width=600 ,height=350,callback=update_game_path)
+dpg.add_file_dialog(tag="entergamepath", directory_selector=True,show=False,width=600 ,height=350,callback=update_game_path)
 
 with dpg.window(label="Reinstall packet?", modal=True, show=False, tag="modal",no_resize=True, no_title_bar=True,width=325,height=105,pos=[167,113.7]):
     dpg.add_text("Are you sure you want to install the build?\n This will take some time and require stable \ninternet traffic, your configs and mod folder\n will be backed up.")
