@@ -70,7 +70,7 @@ with dpg.window(tag="window",no_resize=True):
                 dpg.add_button(label="Play"         , pos=[670 / 2 - 310, 455 / 2 - 150], width=100,height=50, callback=run_game)
                 dpg.add_button(label="install"      , pos=[670 / 2 - 310, 455 / 2 - 90] , width=100,height=50, callback=lambda: dpg.configure_item("modal", show=True))
                 dpg.add_button(label="select folder", pos=[670 / 2 - 310, 455 / 2 - 30] , width=100,height=50, callback=lambda: dpg.configure_item("entergamepath", show=True))
-                dpg.add_text("Paragon launcher \n V1.0.0", pos = [280,150])
+                dpg.add_text("Paragon launcher \n V1.0.1-A", pos = [280,150])
                 dpg.add_text("", pos = [280,179],tag="messange")
 
 dpg.add_file_dialog(tag="entergamepath",directory_selector=True,show=False,width=600 ,height=350,callback=update_game_path)
@@ -82,7 +82,7 @@ with dpg.window(label="Reinstall packet?", modal=True, show=False, tag="modal",n
         dpg.add_button(label="OK", width=75, callback=get_pdata)
         dpg.add_button(label="Cancel", width=75, callback=lambda: dpg.configure_item("modal", show=False))
 
-dpg.create_viewport(title = "main", width=670, height=455)
+dpg.create_viewport(title = "paragon launcher V101A", width=670, height=455)
 dpg.set_primary_window("window",True)
 
 Initialization()
