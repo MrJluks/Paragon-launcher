@@ -63,7 +63,7 @@ def run_game():
 
 
 dpg.create_context()
-with dpg.window(tag="paragon launcher V101A",no_resize=True):
+with dpg.window(tag="window",no_resize=True):
     with dpg.tab_bar():
         with dpg.tab(label="main"):
             with dpg.group(horizontal=True):
@@ -82,7 +82,7 @@ with dpg.window(label="Reinstall packet?", modal=True, show=False, tag="modal",n
         dpg.add_button(label="OK", width=75, callback=get_pdata)
         dpg.add_button(label="Cancel", width=75, callback=lambda: dpg.configure_item("modal", show=False))
 
-dpg.create_viewport(title = "main", width=670, height=455)
+dpg.create_viewport(title = "paragon launcher V101A", width=670, height=455)
 dpg.set_primary_window("window",True)
 
 Initialization()
