@@ -63,14 +63,14 @@ def run_game():
 
 
 dpg.create_context()
-with dpg.window(tag="window",no_resize=True):
+with dpg.window(tag="paragon launcher V101A",no_resize=True):
     with dpg.tab_bar():
         with dpg.tab(label="main"):
             with dpg.group(horizontal=True):
                 dpg.add_button(label="Play"         , pos=[670 / 2 - 310, 455 / 2 - 150], width=100,height=50, callback=run_game)
                 dpg.add_button(label="install"      , pos=[670 / 2 - 310, 455 / 2 - 90] , width=100,height=50, callback=lambda: dpg.configure_item("modal", show=True))
                 dpg.add_button(label="select folder", pos=[670 / 2 - 310, 455 / 2 - 30] , width=100,height=50, callback=lambda: dpg.configure_item("entergamepath", show=True))
-                dpg.add_text("Paragon launcher \n V1.0.0", pos = [280,150])
+                dpg.add_text("Paragon launcher \n V1.0.1-A", pos = [280,150])
                 dpg.add_text("", pos = [280,179],tag="messange")
 
 dpg.add_file_dialog(tag="entergamepath",directory_selector=True,show=False,width=600 ,height=350,callback=update_game_path)
